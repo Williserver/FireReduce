@@ -1,2 +1,8 @@
 # FireReduce plugin.
 # Currently unused -- will fill in percent reduction field.
+
+# What percentage of fire spread events should be cancelled.
+# A higher number means less fire.
+# Acceptable range: 0..100
+# DEFAULT: 50
+percentCancelled: 50
