@@ -11,11 +11,14 @@ class FireReducePlugin: JavaPlugin() {
     private val logHandler = LogHandler(logger)
 
     override fun onEnable() {
-        logHandler.info("Fire reduce plugin enabled")
+        server.pluginManager.registerEvents(FireSpreadListener(), this)
+        logHandler.info("Server event listeners registered.")
+
+        logHandler.info("FireReduce enabled!")
     }
 
     override fun onDisable() {
-        logHandler.info("Fire reduce plugin disabled")
+        logHandler.info("FireReduce disabled!")
     }
 
     companion object {
